@@ -1,0 +1,115 @@
+
+
+
+
+/* ===== Common Css ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* Section Tittle */
+section h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+/* ====== Progress ====== */
+#Progress{
+    padding: 20px;
+    background: rgba(245, 135, 135, 0.407);
+}
+.wrap{
+    margin-bottom: 30px;
+}
+.wrap:last-child{
+    margin-bottom: 0;
+}
+.load-html{
+    border: #000 solid 1px;
+    height: 20px;
+    width: 200px;
+    position: relative;
+}
+.load-html::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    background: #fd5101;
+    animation: html 0.8s linear forwards;
+}
+.load-html::after{
+    content: '80%';
+    position: absolute;
+    right: -50px;
+}
+.load-css{
+    border: #000 solid 1px;
+    height: 20px;
+    width: 200px;
+    position: relative;
+}
+.load-css::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    background: #0177fd;
+    animation: css 0.5s linear forwards;
+}
+.load-css::after{
+    content: '55%';
+    position: absolute;
+    right: -50px;
+}
+ .load-js{
+    border: #000 solid 1px;
+    height: 20px;
+    width: 200px;
+    position: relative;
+}
+.load-js::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #d7fd01;
+    animation: js 0.2s linear forwards;
+}
+.load-js::after{
+    content: '20%';
+    position: absolute;
+    right: -50px;
+}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes css {
+    from{
+        width: 0;
+    }
+    to{
+        width: 55%;
+    }
+}
+@keyframes js {
+    from{
+        width: 0;
+    }
+    to{
+        width: 20%;
+    }
+}
+/* Code by YASIN ARAFAT AJAD */
